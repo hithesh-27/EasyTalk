@@ -23,22 +23,37 @@ function Homepage() {
   }, [history]);
 
   return (
-    <Container maxW="xl" centerContent>
+    <Container maxW="xl" centerContent className="homepage-bg">
       <Box
         d="flex"
         justifyContent="center"
+        alignItems="center"
         p={3}
-        bg="white"
+        bg="rgba(255,255,255,0.84)"
         w="100%"
         m="40px 0 15px 0"
         borderRadius="lg"
         borderWidth="1px"
+        boxShadow="lg"
       >
-        <Text fontSize="4xl" fontFamily="Work sans">
-          Talk-A-Tive
+        <Text
+          fontSize={{ base: "3xl", md: "5xl" }}
+          fontFamily="Work sans"
+          fontWeight="extrabold"
+          letterSpacing="wide"
+          color="#1A202C"
+        >
+          EasyTalk
         </Text>
       </Box>
-      <Box bg="white" w="100%" p={4} borderRadius="lg" borderWidth="1px">
+      <Box
+        bg="rgba(255,255,255,0.88)"
+        w="100%"
+        p={6}
+        borderRadius="xl"
+        borderWidth="1px"
+        boxShadow="2xl"
+      >
         <Tabs isFitted variant="soft-rounded">
           <TabList mb="1em">
             <Tab>Login</Tab>
